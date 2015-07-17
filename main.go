@@ -27,8 +27,7 @@ func main() {
 			log.Fatal(err)
 		}
 
-		expandedContents := os.ExpandEnv(string(buf))
-		fmt.Println(expandedContents)
+		fmt.Print(os.ExpandEnv(string(buf)))
 	}
 
 	app.Run(os.Args)
